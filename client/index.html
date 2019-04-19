@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<body oncontextmenu="return false;">
+
+<script>
+  document.onkeydown = function(e) {
+if(event.keyCode == 123) {
+return false;
+}
+if(e.ctrlKey && e.keyCode == 'E'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.keyCode == 'H'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.keyCode == 'A'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.keyCode == 'E'.charCodeAt(0)){
+return false;
+}
+}
+
+function Login(form) { username = new Array("L$D","Fox","frotobagins","edvard853","crazyhair513","Succulent Whale","clockwise","tornillo","the muffin man","1812"); password = new Array("(oldBulb67","(oolRoll96","sw!ftFinch52","brownC@r61","j@zzyBeam21","c@lmFork51","o)dBoot78","tonyruns","1800bathtub","starkraft browar");app = "chats" + ".html"; if (form.username.value == username[0] && form.password.value == password[0] || form.username.value == username[1] && form.password.value == password[1] ||
+
+form.username.value == username[2] && form.password.value == password[2] || form.username.value == username[3] && form.password.value == password[3] ||
+
+form.username.value == username[4] && form.password.value == password[4] || form.username.value == username[5] && form.password.value == password[5] ||
+
+form.username.value == username[6] && form.password.value == password[6] || form.username.value == username[7] && form.password.value == password[7] ||
+
+form.username.value == username[8] && form.password.value == password[8] || form.username.value == username[9] && form.password.value == password[9]) { self.location.href = app; } else { alert("Either the username or password you entered is incorrect.\nPlease try again."); form.username.focus(); } return true; }
+
+
+</script> </head> <body bgcolor="#eeeeee"> <form> <br> <center> <h5>Username: <input type="text" name="username"
+style="background:#bfbfbf;color:#212121;border-color:#212121;" onFocus="this.style.background = '#ffffff';"
+
+onBlur="this.style.background = '#bfbfbf';"> <br> Password: <input type="password" name="password" style="background:#bfbfbf;color:#212121;border-color:#212121;" onFocus="this.style.background = '#ffffff';"
+
+onBlur="this.style.background = '#bfbfbf';"> <br> <input type="button" value="Login" onClick="Login(this.form);" style="background:#bfbfbf;color:#000000;border-color:#212121;" onMouseOver="this.style.color =
+
+'#404040';" onMouseOut="this.style.color = '#000000';" onFocus="this.style.color = '#404040';" onBlur="this.style.color = '#000000';"></h5> </center> </form> </body> </html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+  background-color: rgb(238, 238, 238);
+  color: rgb(238, 238, 238);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: rgb(238, 238, 238);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
+</head>
+<body>
+
+
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Guest Login</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="guestlogin.html">Login as Guest</a>
+  </div>
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+</body>
+</html>
+
+ 
